@@ -17,5 +17,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Responsive dark UI with animated scan frame
 - Support for direct opening from `file://` without a local server
 
-[Unreleased]: https://github.com/franciscoretamal/claude-qr-scanner/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/franciscoretamal/claude-qr-scanner/releases/tag/v1.0.0
+[Unreleased]: https://github.com/AlejandroPu/claude-qr-scanner/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/AlejandroPu/claude-qr-scanner/releases/tag/v1.0.0
