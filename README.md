@@ -49,13 +49,6 @@ claude-qr-scanner/
 └── LICENSE
 ```
 
-## Built With
-
-This project was created with AI assistance:
-
-- **[Cursor](https://cursor.sh)** v0.3.12 — AI-powered code editor
-- **[Claude Code](https://claude.ai/code)** v2.1.94 — Anthropic's agentic coding tool
-
 ## License
 
 MIT © 2026 Francisco Alejandro Retamal Reinoso — see [LICENSE](LICENSE) for details.
