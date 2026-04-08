@@ -2,6 +2,8 @@
 
 A browser-based QR code reader that requires no installation or server setup. It accesses the device camera, detects QR codes in real time, and lets you copy the result to the clipboard in one click.
 
+This project was created with AI assistance using **[Cursor](https://cursor.sh)** v0.3.12 and **[Claude Code](https://claude.ai/code)** v2.1.94.
+
 ## Features
 
 - Camera access with preference for the rear-facing camera (optimized for mobile)
