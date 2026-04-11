@@ -8,6 +8,7 @@ This project was created with AI assistance using **[Cursor](https://cursor.sh)*
 
 - Camera access with preference for the rear-facing camera (optimized for mobile)
 - Automatic real-time QR code detection
+- QR detection from an uploaded image file (no camera required)
 - One-click copy to clipboard
 - Works directly from `file://` — no local server needed
 - Responsive UI with a dark theme
@@ -23,11 +24,19 @@ This project was created with AI assistance using **[Cursor](https://cursor.sh)*
 
 1. Clone or download the repository
 2. Open `index.html` in Chrome or Edge
+
+**From camera:**
+
 3. Click **Start camera** and grant camera permission
 4. Point the camera at a QR code
 5. The result appears automatically — click **Copy** to copy it to the clipboard
 
 > The camera stops automatically once a QR code is detected.
+
+**From an image file:**
+
+3. Click **Cargar imagen** and select a photo or screenshot containing a QR code
+4. The result appears automatically — click **Copy** to copy it to the clipboard
 
 ## Browser Compatibility
 
@@ -45,6 +54,7 @@ claude-qr-scanner/
 ├── index.html      # UI structure and elements
 ├── style.css       # Styles and animations
 ├── app.js          # Camera logic and QR detection
+├── CLAUDE.md       # Persistent project context for Claude Code
 ├── CHANGELOG.md
 └── LICENSE
 ```

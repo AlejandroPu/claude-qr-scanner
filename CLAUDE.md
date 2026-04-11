@@ -7,7 +7,7 @@ Contexto persistente para Claude Code durante el desarrollo de este proyecto.
 Lector de códigos QR que corre completamente en el navegador, sin servidor ni proceso de build. El usuario abre `index.html` directamente desde el sistema de archivos (`file://`) o desde un servidor estático y escanea QR con la cámara del dispositivo.
 
 - Repositorio: https://github.com/AlejandroPu/claude-qr-scanner
-- Versión actual: 1.0.0 (lanzada 2026-04-08)
+- Versión actual: 1.1.0 (lanzada 2026-04-11)
 - Licencia: MIT © 2026 Francisco Alejandro Retamal Reinoso
 
 ## Stack y dependencias
@@ -98,6 +98,7 @@ stopCamera()
 
 ## Historial de versiones
 
+- **1.1.0** (2026-04-11) — Escaneo desde archivo de imagen (sin cámara).
 - **1.0.0** (2026-04-08) — MVP: cámara, detección QR en tiempo real, copiar al portapapeles, UI oscura responsiva.
 
 ## Áreas pendientes / posibles mejoras
