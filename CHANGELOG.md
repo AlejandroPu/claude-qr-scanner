@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-04-11
+
+### Added
+
+- Upload an image file to scan a QR code without using the camera (`scanImageFile`)
+- "Cargar imagen" button with distinct blue styling
+
 ## [1.0.0] - 2026-04-08
 
 ### Added
@@ -17,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Responsive dark UI with animated scan frame
 - Support for direct opening from `file://` without a local server
 
-[Unreleased]: https://github.com/AlejandroPu/claude-qr-scanner/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/AlejandroPu/claude-qr-scanner/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/AlejandroPu/claude-qr-scanner/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/AlejandroPu/claude-qr-scanner/releases/tag/v1.0.0
