@@ -3,6 +3,8 @@ const canvas    = document.getElementById('canvas');
 const ctx       = canvas.getContext('2d');
 const btnStart  = document.getElementById('btn-start');
 const btnStop   = document.getElementById('btn-stop');
+const btnUpload = document.getElementById('btn-upload');
+const fileInput = document.getElementById('file-input');
 const resultBox = document.getElementById('result');
 const resultTxt = document.getElementById('result-text');
 const btnCopy   = document.getElementById('btn-copy');
@@ -77,6 +79,38 @@ btnCopy.addEventListener('click', async () => {
   }
 });
 
+// ── Scan from image file ──────────────────────────────────────────────────────
+function scanImageFile(file) {
+  stopCamera();
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const img = new Image();
+    img.onload = () => {
+      canvas.width  = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      ctx.drawImage(img, 0, 0);
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const code = jsQR(imageData.data, imageData.width, imageData.height, {
+        inversionAttempts: 'dontInvert'
+      });
+      if (code) {
+        showResult(code.data);
+      } else {
+        alert('No se encontró ningún código QR en la imagen.');
+      }
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
 // ── Events ────────────────────────────────────────────────────────────────────
 btnStart.addEventListener('click', startCamera);
 btnStop.addEventListener('click', stopCamera);
+btnUpload.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  if (file) scanImageFile(file);
+  fileInput.value = '';
+});

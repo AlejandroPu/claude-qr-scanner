@@ -72,6 +72,7 @@ h1 {
 /* --- Controls --- */
 .controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -99,6 +100,16 @@ button:disabled {
 #btn-stop {
   background: #475569;
   color: #f1f5f9;
+}
+
+#btn-upload {
+  background: #1e40af;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+#btn-upload:hover:not(:disabled) {
+  background: #2563eb;
 }
 
 /* --- Result --- */
